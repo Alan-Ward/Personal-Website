@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Alan Ward</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <nav>
+            <a href="#AboutMe" onclick="scrollToSection('#AboutMe')">About</a>
+            <a href="#Projects" onclick="scrollToSection('#Projects')">Projects</a>
+            <a href="#Resume" onclick="scrollToSection('#Resume')">Resume</a>
+            <a href="#ContactInfo" onclick="scrollToSection('#ContactInfo')">Contact</a>
+            <button onclick="toggleMode()" id="toggleButton"class="modeToggle">Light mode</button>
+            
+        </nav>
+        
+        <header>
+            <h1>Alan Ward</h1>
+        </header>
+        <main>
+            <div class="AboutMe" id="AboutMe">
+                <h2>About</h2>
+                <p>My Name is Alan Ward. I'm a Computer Science student at Ontario Tech Univeristy. 
+                The purpose of making this website was to display my projects and information to potential employers, 
+                aswell as improving my Web Dev skills. As a child, I was always interested in building things and solving prolems.
+                I had an interest in math and science and was always curious about how computers worked. Near the end of elementary school, 
+                I started learning about programing and found the website Scratch that let me create my own games. I became hooked. 
+                Throughout highschool I explored programing languages like Javascript and HTML and especially python.
+                I would spend hours after school making games with python. Now as a computer science student, 
+                I have the privalaged to learn many fasinating aspects of computer science and hopfully one day have a 
+                career in the tech industy. Some areas of computer science I am particularally intersted in are; WebDev,
+                Computer Arcitecture/Embedded Systems, and Data Science, aswell as project development as a whole. 
+                I am constantly trying to learn new skills and technologies, and I try to futher my knowledge by creating interesting 
+                and inivative projects. As you futher explore my website, I have examples of many of the projects I have made, 
+                in and out of school.
+            </p>
+            </div>
+            <div class="Projects" id="Projects">
+                <h2>Projects</h2>
+                <div id="Gomoku Website/Chat Server">
+                    <H3>Gomoku game server</H3>
+                    <p>While taking "Software Development and Integreation, part of the curiculem was to create 3 group projects. The first was a spam detection program that will be shown later in the website. The second was a chat server, but It was integrated into the final project so I have not included it. The final project was a server that allowed you to host a japanease game similar the checkers. 
+                        The server used websokets for bidirectional communication, and was created with JS/HTML/CSS for the frontend, and Java for the backend. As mentioned, Each game had an independed chat room where opponents and spectators could communitcate in real time.
+                        The project taught me a lot about websokets and web development. It also forced me to improve my design, documentation, and commenting skills for better readability and look.
+                        It was a very enjoyable project to make Inspired me to create a checkers website. I didn't like that the Gomoku server was only able to be locally hosted so I tried to created website (somewhat similar to the project) that allowed users to play checkers against eachother while being hosted on the web. "</p>
+
+                </div>
+                <div id="Spam Detection">
+                    <H3>Spam Detection Program</H3>
+                    <p>As mentioned in the project above, my Software Development and Integreation course required me to make a spam detection program. We were given a data set of emails that were labeled spam or ham(not spam). Using a metioned involing finding the probability of certain word found in alot of spam emailing and putting it in a hashmap, we were able to detect spam emails with a 89% accuracy.
+                        The project used Java in the backend and JS/HTML/CSS for the frontend display. The project taught me a lot about data reading, as it gave me the freedom to find inovative solutions for detecting spam. 
+                        It was alot of fun working on the project and I'd like to explore popular technics for spam detection.  
+                    </p>
+
+                </div>
+                <div id="Sudoku Solver">
+                    <H3>Sudoku Solver</H3>
+                    <p>This was a project I started in grade 11, but didn't have the proper knowledge to complete untill the end of my first universtiy semester. I tried many different technics of solving a given sudoku matrix using interation, but I wasn't able to complete it until I learned recursion in my intro cs course. I was able to use recurcive backtracking to attempt thousands of solutions for the board, going back one step every time there was an illegal move, until the board was solved. 
+                        This project really pushed my coding skills and required me to try many methods over 2 years, but I am very glad I did it and I taught me so much.
+                    </p>
+                </div>
+                <div id="ChatGPT games"></div>
+                <h3>Multiple games made with help from ChatGPT 3</h3>
+                <p>When ChaptGPT 3 was first released, I was very curious to see how good it was at coding and how I would be able to use it to increase my productivity. unfortunately it wasn't very good at that time but it still allowed me to make some simple games quickier that I would have without it.
+                    I made flappybird, minesweeper, and snake, each in only a couple hours. I was fun to explore the new technology and since then AI has improved alot so I might revisite the project in the future or add some more simple games</p>
+
+            </div>
+            <div class="Resume" id="Resume">
+                <h2>Resume</h2>
+                <iframe class="pdf" src="Resume.pdf"></iframe>
+            </div>
+            <div class="ContactInfo" id="ContactInfo">
+                <h2>Contact Information</h2>
+                <p>
+                    If you would like to contact me, my email is Alanjacobward@gmail.com 
+                </p>
+                <p>
+                    You can find all my projects on my <a href="https://github.com/Alan-Ward">github</a>
+                </p>
+
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+
+    </body>
+</html>

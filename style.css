@@ -1,0 +1,110 @@
+:root {
+    --background-color: rgb(80, 80, 80);
+    --main-background-start: rgb(80, 80, 80);
+    --main-background-end: rgb(120, 120, 120);
+    --header-background-start: rgb(50, 50, 50);
+    --header-background-end: rgb(80, 80, 80);
+    --nav-background-start: rgb(20, 20, 20);
+    --nav-background-end: rgb(50, 50, 50);
+    --button-background-start: rgb(20, 20, 20);
+    --button-background-end: rgb(50, 50, 50);
+    --button-hover-background-start: rgb(30, 30, 30);
+    --button-hover-background-end: rgb(60, 60, 60);
+}
+
+
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--background-color);
+    font-family: Arial, sans-serif;
+}
+
+main {
+    background: linear-gradient(to bottom, var(--main-background-start), var(--main-background-end));
+    padding: 10%;
+}
+
+header {
+    text-align: center;
+    font-size: xx-large;
+    margin: 0px;
+    padding: 1rem;
+    background: linear-gradient(to bottom, var(--header-background-start), var(--header-background-end));
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, var(--nav-background-start), var(--nav-background-end));
+    padding: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 0px;
+    text-decoration: none;
+}
+
+a, button {
+    border: none;
+    text-decoration: none;
+    border-radius: 10%;
+    padding: 2%;
+    color: white;
+    font-size: 200%;
+    background: linear-gradient(to bottom, var(--button-background-start), var(--button-background-end));
+    transition: 0.5s;
+}
+
+a:hover, button:hover {
+    background: linear-gradient(to bottom, var(--button-hover-background-start), var(--button-hover-background-end));
+    padding: 2.5%;
+}
+
+#ContactInfo a {
+    text-decoration: none;
+    color: white;
+    background: none;
+    padding: 0px;
+    font-size: 100%;
+}
+
+#ContactInfo a:hover {
+    background: none;
+}
+
+p {
+    color: white;
+    padding: 1rem;
+    font-size: 200%; 
+}
+
+h1, h2, h3 {
+    color: white;
+    padding: 1rem;
+    font-size: 300%;
+}
+
+iframe {
+    width: 100%;
+    height: 800px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px black;
+}
+
+#AboutMe, #Projects, #Resume, #ContactInfo {
+    margin: 2rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+footer {
+    text-align: center;
+    background: linear-gradient(to bottom, var(--main-background-end), var(--header-background-start));
+    padding: 4rem;
+    margin: 0px;
+}
